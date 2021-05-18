@@ -31,7 +31,7 @@ class LayoutDefault{
         $content .= "            <?php echo \$this->javascriptGlobals(); ?>\n";
         $content .= "            <div class=\"row\">\n";
         $content .= "                <div class=\"col col-menu\">\n";
-        $content .= "                    <iframe class=\"border\" src=\"<?=\$this->url('Cabecera', array('action' => $GLOBALS['menu'], 'id' => $GLOBALS['menuId']));?>\"\n";
+        $content .= "                    <iframe class=\"border\" src=\"<?=\$this->url('Cabecera', array('action' => \$GLOBALS['menu'], 'id' => \$GLOBALS['menuId']));?>\"\n";
         $content .= "                            frameborder=\"0\" style=\"width:100%; height:100%;\"></iframe>\n";
         $content .= "                </div>\n";
         $content .= "                <div class=\"col col-content\">\n";
